@@ -1,0 +1,116 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.form {
+  flex: 1; /* Occupy the remaining space */
+  padding: 20px; /* Add some padding to the form */
+  justify-self: center;
+  align-self: center;
+}
+
+/* Add the following styles to center the form elements */
+.first,
+.last,
+.email,
+.password,
+.level,
+.google,
+.signup,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#second_div_login {
+  flex: 1; /* Occupy the remaining space */
+  height: 90%;
+  border-radius: 20px;
+  background: url("/static/login_page.png"), lightgray 50% / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#second_div {
+  flex: 1; /* Occupy the remaining space */
+  height: 100%;
+  background-color: #5a076e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#second_div > div {
+  width: 50%; /* Set the width to 50% */
+  text-align: right;
+}
+
+#google_image {
+  height: 20px;
+}
+
+#firstname,
+#lastname,
+#password,
+#email,
+#level,
+#signup,
+#signin,
+#google {
+  width: 380px; /*Make input elements 100% width */
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#signin_link {
+  text-align: center;
+}
+
+.form,
+#second_div {
+  border: 0px solid black;
+}
+
+#second_header {
+  color: gray;
+  font-size: large;
+}
+
+#first_header,
+#second_header {
+  text-align: left;
+}
+
+#login_page {
+  width: 709px;
+  height: 936px;
+  flex-shrink: 0;
+}
+
+.signup {
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #5a076e;
+}
+
+a:hover {
+  color: #5a076e;
+}

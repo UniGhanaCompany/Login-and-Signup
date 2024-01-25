@@ -1,0 +1,76 @@
+{% extends "layout.html" %} {%block main%}
+<div class="main">
+  <div class="form">
+    <div class="header">
+      <h1 id="first_header">Access UniGhana</h1>
+      <p id="second_header">
+        Fill in your details to continue where you left off
+      </p>
+    </div>
+    <div class="email">
+      <div>
+        <label style="margin-bottom: 5px" for="email"
+          ><strong>Email</strong></label
+        >
+      </div>
+      <div>
+        <input
+          autocomplete="off"
+          id="email"
+          name="email"
+          type="email"
+          required
+        />
+      </div>
+    </div>
+    <div class="password">
+      <div>
+        <label style="margin-bottom: 5px" for="password"
+          ><strong>Password</strong></label
+        >
+      </div>
+      <div>
+        <input
+          autocomplete="off"
+          id="password"
+          name="password"
+          type="password"
+          required
+        />
+      </div>
+    </div>
+    <div class="signup">
+      <button
+        class="btn"
+        style="
+          margin-bottom: 5px;
+          margin-top: 5px;
+          background-color: purple;
+          border-color: purple;
+        "
+        id="signin"
+      >
+        <strong style="color: white">SIGN IN</strong>
+      </button>
+    </div>
+    <div class="google">
+      <div style="margin-bottom: 5px">
+        <button id="google">
+          <img
+            src="/static/google.webp"
+            alt="Google Logo"
+            id="google_image"
+          />Continue with Google
+        </button>
+      </div>
+    </div>
+    <div id="signin_link" style="margin-bottom: 5px">
+      <p>
+        Don't have an account?
+        <a href="/"><strong style="color: purple">Sign up</strong></a>
+      </p>
+    </div>
+  </div>
+  <div id="second_div_login" class="image"></div>
+</div>
+{%endblock%}

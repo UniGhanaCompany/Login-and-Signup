@@ -1,0 +1,125 @@
+{% extends "layout.html" %} {% block main %}
+<div class="main">
+  <div class="form">
+    <div class="header">
+      <h1 id="first_header">Access UniGhana</h1>
+      <p id="second_header">
+        Create an account and join us on this journey now
+      </p>
+    </div>
+    <div class="first">
+      <div>
+        <label style="margin-bottom: 5px" for="firstname"
+          ><strong>First Name</strong></label
+        >
+      </div>
+      <div>
+        <input
+          autocomplete="off"
+          autofocus
+          id="firstname"
+          name="firstname"
+          type="text"
+          required
+        />
+      </div>
+    </div>
+    <div class="last">
+      <div>
+        <label style="margin-bottom: 5px" for="lastname"
+          ><strong>Last Name</strong></label
+        >
+      </div>
+      <div>
+        <input
+          autocomplete="off"
+          id="lastname"
+          name="lastname"
+          type="text"
+          required
+        />
+      </div>
+    </div>
+    <div class="email">
+      <div>
+        <label style="margin-bottom: 5px" for="email"
+          ><strong>Email</strong></label
+        >
+      </div>
+      <div>
+        <input
+          autocomplete="off"
+          id="email"
+          name="email"
+          type="email"
+          required
+        />
+      </div>
+    </div>
+    <div class="level">
+      <div>
+        <label style="margin-bottom: 5px" for="level"
+          ><strong>Education Level</strong></label
+        >
+      </div>
+      <div>
+        <select id="level">
+          <option value="highschool">Senior High School</option>
+          <option value="college">UnderGraduate</option>
+        </select>
+      </div>
+    </div>
+    <div class="password">
+      <div>
+        <label style="margin-bottom: 5px" for="password"
+          ><strong>Password</strong></label
+        >
+      </div>
+      <div>
+        <input
+          autocomplete="off"
+          id="password"
+          name="password"
+          type="password"
+          required
+        />
+      </div>
+    </div>
+    <div class="signup">
+      <button
+        class="btn"
+        style="
+          margin-bottom: 5px;
+          margin-top: 5px;
+          background-color: purple;
+          border-color: purple;
+        "
+        id="signup"
+      >
+        <strong style="color: white">SIGN UP</strong>
+      </button>
+    </div>
+    <div class="google">
+      <div style="margin-bottom: 5px">
+        <button id="google">
+          <img
+            src="/static/google.webp"
+            alt="Google Logo"
+            id="google_image"
+          />Continue with Google
+        </button>
+      </div>
+    </div>
+    <div id="signin_link" style="margin-bottom: 5px">
+      <p>
+        Already have an account?
+        <a href="/signin"><strong>Sign in</strong></a>
+      </p>
+    </div>
+  </div>
+  <div id="second_div" class="image">
+    <image src="/static/unighana.PNG" alt="UniGhana Logo" />
+  </div>
+</div>
+
+{% endblock %}
